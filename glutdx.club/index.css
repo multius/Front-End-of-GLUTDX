@@ -3,13 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+.nav{
+    color: #ffffff;
+    padding: 10px 24px;
+}
 
 .home-bg{
     background-image: url(bgimage.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
-}
-
-.nav{
-    padding: 10px 24px;
 }
