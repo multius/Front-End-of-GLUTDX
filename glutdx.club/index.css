@@ -43,6 +43,6 @@
     background-image: url(bgimage.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
-    height: 4000px;
-    width: 1400px;
+    background-size: cover;
+    height: 969px;
 }
