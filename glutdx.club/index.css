@@ -14,11 +14,23 @@
     width: 100%;
     height: 56px;
     display: flex;
+    
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+
+.link,.user{
+    text-decoration:none;
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
 }
 
 .nav-link-ul{
     display: flex;
     list-style:none;
+}
+
+.nav-link-item{
+    margin-left: 12px;
 }
 
 .nav-user-ul{
