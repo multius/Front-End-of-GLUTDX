@@ -42,7 +42,7 @@
 .home-bg{
     background-image: url(bgimage.jpg);
     background-repeat: no-repeat;
-    background-position: center 0;
+    background-position: center center;
     background-size: cover;
     height: 969px;
 }
