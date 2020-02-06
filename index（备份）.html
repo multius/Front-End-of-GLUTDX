@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<style type="text/css">
+.hello{
+	position:absolute;
+	left:0;
+	right:0;
+	top:25%;
+	text-align:center;
+	font-size:100px;
+	width:100%;
+	color:#000000;
+	text-shadow: #cccccc 0.1em 0.1em 0.2em;
+}
+body{
+	padding:0;
+	margin:0;
+}
+</style>
+<title>Hello World</title>
+<body onmousemove=/HideMenu()/ oncontextmenu="return false" ondragstart="return false" onselectstart ="return false" onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false" onmouseup="document.selection.empty()">
+<div class="hello">Hello World</div>
+
+<div id="footer" style="bottom:3%;position:fixed;margin:0 auto;width:100%">
+	<p class="copyright" style="font-size:12px;line-height:24px;color:#919797;text-align:center;margin:0 auto;">
+		© 2019 - 2020 GM All Rights Reserved. 备案号:<a href="http://www.beian.miit.gov.cn/">鄂ICP备19003286号-3</a>
+	</p>
+</div>
+</body>
+<script>
+window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
+    // 判断是否按下F12，F12键码为123
+    if (event.keyCode === 123) {
+        event.preventDefault(); // 阻止默认事件行为
+        window.event.returnValue = false;
+    }
+};
+console.log("你好！");
+</script>
