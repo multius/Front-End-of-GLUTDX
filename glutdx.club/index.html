@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=645">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="jquery-3.4.1.js" type="text/javascript"></script>
@@ -16,27 +17,50 @@
             <div class="nav-link">
                 <ul class="nav-link-ul">
                     <li class="nav-link-item"><a class="link" href="index.html">主页</a></li>
-                    <li class="nav-link-item"><a class="link" href="index.html">论坛</a></li>
-                    <li class="nav-link-item"><a class="link" href="index.html">视频</a></li>
-                    <li class="nav-link-item"><a class="link" href="index.html">文章</a></li>
+                    <li class="nav-link-item to-be-perfected"><a class="link" href="index.html">论坛</a></li>
+                    <li class="nav-link-item to-be-perfected"><a class="link" href="index.html">视频</a></li>
+                    <li class="nav-link-item to-be-perfected"><a class="link" href="index.html">文章</a></li>
                 </ul>
             </div>
             <div class="nav-user">
                 <ul class="nav-user-ul">
-                    <li class="nav-user-item"><a class="user" href="index.html">登录</a></li>
-                    <li class="nav-user-item"><a class="user" href="index.html">注册</a></li>
+                    <li class="nav-user-item to-be-perfected"><a class="user" href="index.html">登录</a></li>
+                    <li class="nav-user-item to-be-perfected"><a class="user" href="index.html">注册</a></li>
                 </ul>
             </div>
         </div>
         <div class="header-shadow"></div>
 </div>
 
+<div class="home-section" id="home-section1">
+    <div class="home-text" id="home-text1">Welcome to</div>
+    <div class="home-text" id="home-text2">桂工电协</div>
+    <div class="home-text" id="home-text3">Electronic Association of GLUT</div>
+</div>
+<p class="copyright" style="bottom: 0.5%;position:fixed;margin:0 auto;width:100%;font-size:12px;line-height:24px;color:#111111;text-align:center;margin:0 auto;">
+	© 2019 - 2020 GM All Rights Reserved. 备案号:<a href="http://www.beian.miit.gov.cn/" style="color:#111111;">鄂ICP备19003286号-3</a>
+</p>
 <script>
     $(document).ready(function(){
         var height = $(window).height();
         if(height != 969)
             $("body").height(height);
     })
+    $(function(){
+        $(".to-be-perfected").bind("click",function(){
+            alert("相关功能尚未完善，所需时间取决于开发人员->->发量<-<-\nGithub地址github.com/Multi-Illusion/Front-End-of-GLUTDX\n若需要和开发者联系请加QQ2536201638")
+        })
+    })
+    
+    window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
+        // 判断是否按下F12，F12键码为123
+        if (event.keyCode === 123) {
+          event.preventDefault(); // 阻止默认事件行为
+         window.event.returnValue = false;
+        }
+    };
+console.log("你好！");
+
 </script>
 
 </body>
