@@ -16,10 +16,9 @@
 .nav{
     font-size: 18px;
     color: #ffffff;
-    padding: 10px 16px;
+    padding: 18px 4px;
     z-index: 1;
     width: 100%;
-    height: 56px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +43,7 @@
 }
 
 .nav-link-item{
-    margin-left: 24px;
+    margin-left: 22px;
 }
 
 /*-----------------user-------------------*/
@@ -54,7 +53,7 @@
 }
 
 .nav-user-item{
-    margin-right: 24px;
+    margin-right: 22px;
     
 }
 
@@ -78,10 +77,42 @@ body{
     background-position: center center;
     background-size: cover;
     height: 969px;
+    overflow: hidden;
 }
 
 /*------------------------------------------
                 主页分区
 ------------------------------------------*/
+.home-section{
+    display: flex;
+}
 
+#home-section1{
+    flex-direction: column;
+    justify-content: center;
+}
 
+/*------------------------------------------
+                主页文字
+------------------------------------------*/
+.home-text{
+    text-align: center;
+    font-size: 190px;
+    width: 100%;
+    color: #f3f3f3;
+    text-shadow: rgba(0,0,0,0.5) 0.1em 0.1em 0.2em;
+}
+
+#home-text1{
+    padding-top: 130px;
+    font-size: 80px;
+}
+
+#home-text2{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#home-text3{
+    font-size: 50px;
+}
