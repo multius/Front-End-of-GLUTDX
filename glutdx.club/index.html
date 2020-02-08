@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -8,31 +9,35 @@
     <title>桂林理工大学电子协会</title>
 </head>
 
-<body>
-<div class="home-bg"></div>
+<body class="bgi">
+
 <div class="header">
-    <div class="nav">
-        <div class="nav-link">
-            <ul class="nav-link-ul">
-                <li class="nav-link-item"><a class="link" href="index.html">主页</a></li>
-                <li class="nav-link-item"><a class="link" href="index.html">论坛</a></li>
-                <li class="nav-link-item"><a class="link" href="index.html">视频</a></li>
-                <li class="nav-link-item"><a class="link" href="index.html">文章</a></li>
-            </ul>
+        <div class="nav">
+            <div class="nav-link">
+                <ul class="nav-link-ul">
+                    <li class="nav-link-item"><a class="link" href="index.html">主页</a></li>
+                    <li class="nav-link-item"><a class="link" href="index.html">论坛</a></li>
+                    <li class="nav-link-item"><a class="link" href="index.html">视频</a></li>
+                    <li class="nav-link-item"><a class="link" href="index.html">文章</a></li>
+                </ul>
+            </div>
+            <div class="nav-user">
+                <ul class="nav-user-ul">
+                    <li class="nav-user-item"><a class="user" href="index.html">登录</a></li>
+                    <li class="nav-user-item"><a class="user" href="index.html">注册</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="nav-user">
-            <ul class="nav-user-ul">
-                <li class="nav-user-item"><a class="user" href="index.html">登录</a></li>
-                <li class="nav-user-item"><a class="user" href="index.html">注册</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="header-shadow"></div>
+        <div class="header-shadow"></div>
 </div>
 
-<p class="copyright" style="font-size:12px;line-height:24px;color:#919797;text-align:center;margin:0 auto;">
-    © 2019 - 2020 GM All Rights Reserved. 备案号:<a href="http://www.beian.miit.gov.cn/">鄂ICP备19003286号-3</a>
-</p>
-</body>
+<script>
+    $(document).ready(function(){
+        var height = $(window).height();
+        if(height != 969)
+            $("body").height(height);
+    })
+</script>
 
+</body>
 </html>
