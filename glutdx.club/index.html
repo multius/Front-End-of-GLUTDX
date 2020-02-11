@@ -12,7 +12,7 @@
           s.parentNode.insertBefore(hm, s);
         })();
         </script>
-    <meta name="viewport" content="width=645">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="jquery-3.4.1.js" type="text/javascript"></script>
@@ -62,14 +62,11 @@
     })
     
     window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
-        // 判断是否按下F12，F12键码为123
         if (event.keyCode === 123) {
-          event.preventDefault(); // 阻止默认事件行为
+          event.preventDefault();
          window.event.returnValue = false;
         }
     };
-console.log("你好！");
-
 </script>
 
 </body>
