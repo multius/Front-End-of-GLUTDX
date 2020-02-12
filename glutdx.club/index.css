@@ -11,12 +11,14 @@
     position: fixed;
     top: 0px;
     width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
 }
 
 .nav{
     font-size: 18px;
     color: #ffffff;
-    padding: 18px 4px;
     z-index: 1;
     width: 100%;
     display: flex;
@@ -35,7 +37,6 @@
 }
 /*-----------------link-------------------*/
 .nav-link-ul{
-    
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
@@ -50,6 +51,26 @@
 .nav-user-ul{
     display: flex;
     list-style: none;
+}
+
+.nav-user-menu{
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    .nav-user-ul{
+        display: none;
+    }
+    .nav-user-menu{
+        display: block;
+        height: 22px;
+        width: 30px;
+        margin-right: 22px;
+        background-image: url(menu-button.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
 }
 
 .nav-user-item{
