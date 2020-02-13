@@ -89,20 +89,50 @@
 
 .user-menu{
     display: none;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
     z-index: 1000;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     top: 0px;
     left: 0px;
     background-color: rgba(0,0,0,0.8);
     color: #fff;
 }
 
+.user-menu-item{
+    font-size: 22px;
+    margin-top: 22px;
+    width: 82vw;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-menu-item>span{
+    height: 100%;
+    width: 24px;
+    background-image: url(menu-next.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.menu-horizon{
+    height: 2px;
+    width: 86vw;
+    background-color: rgba(256, 256, 256, 0.7);
+}
+
 #menu-close{
     display: block;
-    height: 22px;
-    width: 30px;
+    align-self:flex-end;
+    margin-right: 23px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    width: 28px;
+    height: 28px;
     background-image: url(menu-close.png);
     background-repeat: no-repeat;
     background-position: center center;
