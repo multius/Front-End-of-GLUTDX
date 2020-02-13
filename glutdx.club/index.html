@@ -36,16 +36,22 @@
                     <li class="nav-user-item to-be-perfected"><a class="user" href="index.html">登录</a></li>
                     <li class="nav-user-item to-be-perfected"><a class="user" href="index.html">注册</a></li>
                 </ul>
-                <div class="nav-user-menu to-be-perfected"></div>
+                <div class="nav-user-button"></div>
             </div>
         </div>
         <div class="header-shadow"></div>
 </div>
 
+<div class="user-menu">
+    <div class="user-menu-item" id="menu-close"></div>
+    <div class="user-menu-item">登录</div>
+    <div class="user-menu-item">注册</div>
+</div>
+
 <div class="home-section" id="home-section1">
     <div class="home-text" id="home-text1"></div>
     <div class="home-text" id="home-text2">Welcome to</div>
-    <div class="home-text" id="home-text3">桂工电协</div>
+    <div class="home-text" id="home-text3"><span>桂工</span><span>电协</span></div>
     <div class="home-text" id="home-text4">Electronic Association of GLUT</div>
 </div>
 
@@ -56,6 +62,16 @@
             alert("相关功能尚未完善，所需时间取决于开发人员->->发量<-<-\nGithub地址github.com/Multi-Illusion/Front-End-of-GLUTDX\n若需要和开发者联系请加QQ2536201638")
         })
     })
+
+    $(function(){
+        $(".nav-user-button").bind("click",function(){
+            $(".user-menu").css("display","flex")
+        })
+        $("#menu-close").bind("click",function(){
+            $(".user-menu").css("display","none")
+        })
+    })
+
     
     window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
         if (event.keyCode === 123) {
