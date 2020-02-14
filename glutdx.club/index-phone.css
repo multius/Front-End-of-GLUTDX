@@ -152,7 +152,7 @@
                 主页背景
 ------------------------------------------*/
 body{
-    background-image: url(image/bgimage.jpg);
+    background-image: url(image/bgimage-phone.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
