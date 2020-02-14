@@ -72,7 +72,7 @@
         height: 22px;
         width: 30px;
         margin-right: 22px;
-        background-image: url(menu-button.png);
+        background-image: url(image/menu-button.png);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
@@ -92,19 +92,17 @@
     background-color: rgba(0,0,0,0.8);
     color: #fff;
 
-    transition: left 0.65s;
+    transition: left 0.45s;
 }
 
 .user-menu-active{
     left: 0px;
-
-    transition: left 0.65s;
 }
 
 .user-menu-item{
     font-size: 22px;
     margin-top: 22px;
-    width: 82vw;
+    width: 76vw;
 
     display: flex;
     justify-content: space-between;
@@ -112,8 +110,8 @@
 
 .user-menu-item>span{
     height: 100%;
-    width: 24px;
-    background-image: url(menu-next.png);
+    width: 20px;
+    background-image: url(image/menu-next.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -133,7 +131,7 @@
     margin-bottom: 42px;
     width: 28px;
     height: 28px;
-    background-image: url(menu-close.png);
+    background-image: url(image/menu-close.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -154,7 +152,7 @@
                 主页背景
 ------------------------------------------*/
 body{
-    background-image: url(bgimage.jpg);
+    background-image: url(image/bgimage.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
