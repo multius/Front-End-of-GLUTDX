@@ -67,10 +67,10 @@
 
     $(function(){
         $(".nav-user-button").bind("click",function(){
-            $(".user-menu").css("display","flex")
+            $(".user-menu").addClass("user-menu-active")
         })
         $("#menu-close").bind("click",function(){
-            $(".user-menu").css("display","none")
+            $(".user-menu").removeClass("user-menu-active")
         })
     })
 
