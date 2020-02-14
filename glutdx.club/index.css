@@ -92,17 +92,13 @@
     background-color: rgba(0,0,0,0.8);
     color: #fff;
 
-    transition-duration: 1s;
-    transition-timing-function: ease;
-    transition-property: left;
+    transition: left 0.65s;
 }
 
 .user-menu-active{
     left: 0px;
 
-    transition-duration: 1s;
-    transition-timing-function: ease;
-    transition-property: left;
+    transition: left 0.65s;
 }
 
 .user-menu-item{
