@@ -18,10 +18,12 @@
     <link rel="stylesheet" type="text/css" media="screen and (min-device-width:600px)" href="index-pc.css">
     <script src="jquery-3.4.1.min.js" type="text/javascript"></script>
     <title>桂林理工大学电子协会</title>
+
+    
 </head>
 
 <body>
-
+<img id="bgload" src="image/bgimage-phone.jpg" style="display: none;">
 <div class="header">
         <div class="nav">
             <div class="nav-link">
@@ -73,6 +75,7 @@
         $("#menu-close").bind("click",function(){
             $(".user-menu").removeClass("user-menu-active")
         })
+        $("body").addClass("bgimage-onload")
     })
 
     
@@ -82,6 +85,11 @@
          window.event.returnValue = false;
         }
     };
+</script>
+<script>
+        
+    $("body").addClass("bgimage-onload")
+    
 </script>
 
 </body>
