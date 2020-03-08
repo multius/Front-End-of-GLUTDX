@@ -203,7 +203,7 @@ body{
     font-size: 6vh;
 }
 #home-text5{
-    flex-basis: 120px;
+    flex-basis: 28vh;
 }
 @media screen and (max-width: 850px){
     #home-text2{
